@@ -53,3 +53,19 @@ docker ps
 ## 🔗 Relacionado
 
 Los tests E2E que se ejecutan en este pipeline están en [cypress-saucedemo](https://github.com/ryaty1-RM/cypress-saucedemo)
+
+---
+
+## 🌿 Estrategia de Branches
+
+Este repositorio utiliza **GitHub Flow**:
+
+| Branch | Propósito |
+|--------|-----------|
+| `main` | Código estable y listo para producción |
+| `develop` | Rama de desarrollo e integración |
+
+**Flujo de trabajo:**
+1. Todo el desarrollo se hace en `develop`
+2. Cuando el código está listo y probado, se hace merge a `main`
+3. `main` siempre contiene código funcional
