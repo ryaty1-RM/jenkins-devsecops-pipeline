@@ -1,0 +1,31 @@
+services:
+  jenkins-master:
+    image: jenkins/jenkins:lts
+    container_name: jenkins-master
+    restart: always
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins-data:/var/jenkins_home
+    environment:
+      - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
+
+  nodo-dev:
+    image: ubuntu:latest
+    container_name: nodo-dev
+    restart: always
+    command: sleep infinity
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  nodo-staging:
+    image: ubuntu:latest
+    container_name: nodo-staging
+    restart: always
+    command: sleep infinity
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  jenkins-data:
