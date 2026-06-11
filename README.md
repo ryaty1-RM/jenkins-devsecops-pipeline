@@ -73,6 +73,16 @@ docker ps
 
 ---
 
+## 📊 Trazabilidad
+
+| Pipeline                | Requisito | Repo relacionado                                                        |
+| ----------------------- | --------- | ----------------------------------------------------------------------- |
+| pipeline-dev            | REQ-002   | [cypress-saucedemo](https://github.com/ryaty1-RM/cypress-saucedemo)     |
+| pipeline-staging        | REQ-002   | [cypress-saucedemo](https://github.com/ryaty1-RM/cypress-saucedemo)     |
+| pipeline-cleanup-friday | REQ-003   | [tuleapp-qa-workflow](https://github.com/ryaty1-RM/tuleapp-qa-workflow) |
+
+---
+
 ## 🔗 Relacionado
 
 Este proyecto se integra con el ecosistema DevSecOps:
